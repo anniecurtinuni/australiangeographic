@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Solar System</title>
+
+    <!--FULLPAGE.JS CSS LINK--> <!--This links the Fullpage online JavaScript file to my project-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.css" 
+    integrity="sha512-NGRhMiWY9pf5z8PLens7/u+LLwIPAu1dhJ7u9sHRWIo8TKrVbKiWlRdYRH3pVDCZA10zmobo+PBLGeLOREklBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!--ADOBE FONTS CSS LINK--> <!--This enables the Adobe fonts that I've chosen-->
+    <link rel="stylesheet" href="https://use.typekit.net/nlz4jew.css">
+
+    <!--SHOELACE CSS LINK--> <!--This links the online style sheet for Shoelace to my project-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css"/>
+
+    <!--SHOELACE JS LINK--> <!--This links the online JavaScript file to my project for Shoelace-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"></script>
+
+    <!--CSS LINK--> <!--This links to my own css file-->
+    <link rel="stylesheet" href="styles.css">
+
+    <style id="backgroundimage">
+        body {
+            background-image: url("images/background.jpg");
+        }
+    </style>
+
+</head>
+
+
+<!--MAIN BODY-->
+<body>
+    <!--FONT AWESOME JAVASCRIPT FILE-->
+    <script src="https://kit.fontawesome.com/6fada8b15f.js" crossorigin="anonymous"></script>
+
+    <!--NAVIGATION BAR--> 
+    <nav>
+        <div>
+            <a href="#mercurysection">Mercury</a> <!--This links the Mercury anchor tag to the Mercury section of my website-->
+        </div>
+
+        <p class="lines">|</p> 
+
+        <div>
+            <a href="#venussection">Venus</a>
+        </div>
+
+        <p class="lines">|</p>
+
+        <div>
+            <a href="#earthsection">Earth</a>
+        </div>
+
+        <p class="lines">|</p>
+
+        <div>
+            <a href="#marssection">Mars</a>
+        </div>
+
+        <p class="lines">|</p>
+
+        <div>
+            <img src="images/australian-geographic-logo.jpg" id="navimage" alt="The Australian Geographic logo">
+        </div>
+
+        <p class="lines">|</p>
+
+        <div>
+            <a href="#jupitersection">Jupiter</a>
+        </div>
+
+        <p class="lines">|</p>
+
+        <div>
+            <a href="#saturnsection">Saturn</a>
+        </div>
+
+        <p class="lines">|</p>
+
+        <div>
+            <a href="#uranussection">Uranus</a>
+        </div>
+
+        <p class="lines">|</p>
+
+        <div>
+            <a href="#neptunesection">Neptune</a>
+        </div>
+    </nav>
+
+    <!--SOLAR SYSTEM-->
+
+    <!--SUN-->
+    <div id="fullpage"> <!--This is the formatting required for the Fullpage scrolling interaction that I've used-->
+    <div class="section">
+    <section id="sunsection">
+        <div id="suntext">
+            <div>
+                <h1>The <br> Solar <br> System</h1>
+            </div>
+
+            <div>
+                <h3>Our solar system consists of eight planets, four terrestrial and four gas/ice giants. <br> Scroll down to see each planet.</h3>
+            </div>
+        </div>
+
+        <div id="sundiv">
+            <img src="images/sun.png" id="sunimage" alt="Close up image of the sun as seen from space">
+        </div>
+    </section>
+    </div>
+
+    <!--MERCURY-->
+    <div class="section">
+        <section id="mercurysection">
+            <div id="mercurydiv">
+                <img src="images/mercury.png" id="mercuryimage" alt="The planet Mercury up close">
+            </div>
+
+            <div id="mercurytext">
+                <h2>Mercury</h2><h3>Mercury is the closest planet to the sun, and also the fastest travelling planet.</h3>
+                <button id="mercurybutton">More</button>
+            </div>
+        </section>
+
+        <!--MERCURY PROFILE-->
+        <section id="mercuryprofile">
+
+            <sl-tab-group> <!--This is the formatting for the Shoelace tab function that I've used-->
+                <sl-tab slot="nav" panel="general">General Info</sl-tab>
+                <sl-tab slot="nav" panel="custom">More Info</sl-tab>
+            
+                <!--GENERAL INFO TAB-->
+                <sl-tab-panel name="general"> <!--This is the formatting for a singular Shoelace tab-->
+
+                    <div class="generaltab">
+
+                        <!--BACK BUTTON-->
+                        <div class="backbuttonbox"> 
+                            <button id="mercurybackbutton">Back</button>
+                        </div>
+                
+                
+                        <!--KEY FACTS-->
+                        <div class="keyfacts">
+                            <h3>Key Facts</h3>
+                
+                            <h4>Type of planet:</h4>
+                            <p>Terrestrial</p>
+                            <p>_______________</p>
+                
+                            <h4>Number of moons:</h4>
+                            <p>0</p>
+                            <p>_______________</p>
+                
+                            <h4>Year length:</h4>
+                            <p>88 Earth days</p>
+                            <p>_______________</p>
+                
+                            <h4>Day length:</h4>
+                            <p>59 Earth days</p>
+                            <p>_______________</p>
+                
+                            <h4>Average Surface Temp:</h4>
+                            <p>167 degrees celsius</p>
+                            <p>_______________</p>
+                
+                            <h4>Distance from sun:</h4>
+                            <p>67 million km</p>
+                            <p>_______________</p>
+                
+                            <h4>Gravity</h4>
+                            <p>3.7m/s</p>
+                            <p>_______________</p>
+                        </div>
+                
+                        <!--IMAGE-->
+                        <div class="profileimage">
+                            <img src="images/mercury.png" id="mercuryprofileimage" alt="Smaller image of the planet Mercury up close">
+                        </div>
+                
+                        <!--TITLE-->
+                        <div class="profiletitle">
+                            <h2>Mercury</h2>
+                        </div>
+
+                        <!--BALL BOUNCING-->
+                        <div id="mercuryballsection">
+                            <div id="mercuryball">
+    
+                                <div id="mercurybounceball"></div> <!--This is the ball, a div shaped with CSS-->
+    
+                                <sl-tooltip content="Toggle this to bounce a ball">
+                                    <sl-switch id="mercuryballswitch">Enable Bounce</sl-switch> <!--This is a Shoelace switch element-->
+                                </sl-tooltip>
+    
+                                <p>See what a ball bouncing on Mercury would look like</p>
+    
+                            </div>
+
+                        
+                        </div>
+                
+                    </div>
+            
+                </sl-tab-panel>
+
+                <!--CUSTOM TAB/MORE INFO-->
+
+                <sl-tab-panel name="custom" class="customtab">
+                    <div class="thecustomtab">
+        
+                    <!--PARAGRAPH-->
+                    <div class="paragraphtext">
+                        <p>Mercury is the first and smallest planet in our solar system. It is quite similar to the Earth's moon. It zips around the sun at a hasty 47km/s,
+                                meaning that a year only lasts for 88 Earth days. However, it rotates so slowly that a day lasts an entire 59 Earth days.</p>
+                    </div>
+
+                    <div class="calculators">
+        
+                        <!--CALCULATE WEIGHT-->
+                        <div id="mercurycalculateweight">
+                            <h3>Calculate Your Weight <br>on Mercury</h3>
+                            <input type="number" name="weight" id="mercuryweight" placeholder="Enter your weight in kg">
+                            <button id="mercuryweightbutton">Calculate</button>
+                        </div>
+            
+                        <!--WEIGHT ANSWER-->
+                        <div id="mercuryweightanswer">
+                            <h3>Your weight on Mercury<br>is...</h3>
+                            <input type="number" name="finalweight" id="mercuryfinalweight">
+                            <sl-icon name="arrow-counterclockwise" id="mercuryweightrefreshbutton"></sl-icon>
+                        </div>
+            
+                        <!--CALCULATE AGE-->
+                        <div id="mercurycalculateage">
+                            <h3>Calculate Your Age <br>on Mercury</h3>
+                            <input type="number" name="age" id="mercuryage" placeholder="Enter your age in years">
+                            <button id="mercuryagebutton">Calculate</button>
+                        </div>
+            
+                        <!--WEIGHT ANSWER-->
+                        <div id="mercuryageanswer">
+                            <h3>Your age on Mercury<br>is...</h3>
+                            <input type="number" name="finalage" id="mercuryfinalage">
+                            <sl-icon name="arrow-counterclockwise" id="mercuryagerefreshbutton"></sl-icon>
+
+                        </div>
+
+                    </div>
+                        
+
+                    </div>
+                
+                </sl-tab-panel>
+
+            </sl-tab-group>
+
+        </section>
+    </div>
+
+        
+    <!--VENUS-->
+    <div class="section">
+        <section id="venussection">
+            <div id="venustext">
+                <h2>Venus</h2>
+                <h3>Venus is the hottest planet in the solar system, and is also called "Earth's Toxic Twin."</h3>
+                <button id="venusbutton">More</button>
+            </div>
+
+            <div id="venusdiv">
+                <img src="images/venus.png" id="venusimage" alt="The planet Venus up close">
+            </div>
+        </section>
+        
+
+        <!--VENUS PROFILE-->
+        <section id="venusprofile">
+
+            <sl-tab-group>
+                <sl-tab slot="nav" panel="general">General Info</sl-tab>
+                <sl-tab slot="nav" panel="custom">More Info</sl-tab>
+
+                    <!--GENERAL INFO TAB-->
+                    <sl-tab-panel name="general">
+
+                        <div class="generaltab">
+
+                            <!--BACK BUTTON-->
+                            <div class="backbuttonbox"> 
+                                <button id="venusbackbutton">Back</button>
+                            </div>
+
+
+                            <!--KEY FACTS-->
+                            <div class="keyfacts">
+                                <h3>Key Facts</h3>
+
+                                <h4>Type of planet:</h4>
+                                <p>Terrestrial</p>
+                                <p>_______________</p>
+
+                                <h4>Number of moons:</h4>
+                                <p>0</p>
+                                <p>_______________</p>
+
+                                <h4>Year length:</h4>
+                                <p>84 Earth years</p>
+                                <p>_______________</p>
+
+                                <h4>Day length:</h4>
+                                <p>243 Earth days</p>
+                                <p>_______________</p>
+
+                                <h4>Average Surface Temp:</h4>
+                                <p>480 degrees celsius</p>
+                                <p>_______________</p>
+
+                                <h4>Distance from sun:</h4>
+                                <p>108 million km</p>
+                                <p>_______________</p>
+
+                                <h4>Gravity</h4>
+                                <p>8.7m/s</p>
+                                <p>_______________</p>
+                            </div>
+
+                            <!--IMAGE-->
+                            <div class="profileimage">
+                                <img src="images/venus.png" id="venusprofileimage" alt="Smaller image of the planet Venus up close">
+                            </div>
+
+                            <!--TITLE-->
+                            <div class="profiletitle">
+                                <h2>Venus</h2>
+                            </div>
+
+                             <!--BALL BOUNCING-->
+                            <div id="venusballsection">
+                                <div id="venusball">
+        
+                                    <div id="venusbounceball"></div>
+        
+                                    <sl-tooltip content="Toggle this to bounce a ball">
+                                        <sl-switch id="venusballswitch">Enable Bounce</sl-switch>
+                                    </sl-tooltip>
+        
+                                    <p>See what a ball bouncing on Venus would look like</p>
+        
+                                </div>
+
+                            
+                            </div>
+
+                        </div>
+                
+                    </sl-tab-panel>
+
+
+                    <!--CUSTOM TAB/MORE INFO-->
+
+                    <sl-tab-panel name="custom" class="customtab">
+                        <div class="thecustomtab">
+
+                            <div class="paragraphtext">
+                                <p>Venus is the second planet in our solar system. It is also the hottest one, with the average temperature being a sweltering 480 degrees
+                                    celsius! Venus is quite unusual because it rotates backwards on it's axis. It can be called Earth's "toxic twin" because they are similar in 
+                                    size and structure, but Venus has a very toxic atmosphere - the clouds would smell like rotten eggs. 
+                                </p>
+                            </div>
+
+                            <div class="calculators">
+
+                                <!--CALCULATE WEIGHT-->
+                                <div id="venuscalculateweight">
+                                    <h3>Calculate Your Weight <br>on Venus</h3>
+                                    <input type="number" name="weight" id="venusweight" placeholder="Enter your weight in kg">
+                                    <button id="venusweightbutton">Calculate</button>
+                                </div>
+
+                                <div id="venusweightanswer">
+                                    <h3>Your weight on Venus<br>is...</h3>
+                                    <input type="number" name="finalweight" id="venusfinalweight">
+                                    <sl-icon name="arrow-counterclockwise" id="venusweightrefreshbutton"></sl-icon>
+                                </div>
+
+                                <!--CALCULATE AGE-->
+                                <div id="venuscalculateage">
+                                    <h3>Calculate Your Age <br>on Venus</h3>
+                                    <input type="number" name="age" id="venusage" placeholder="Enter your age in years">
+                                    <button id="venusagebutton">Calculate</button>
+                                </div>
+
+                                <div id="venusageanswer">
+                                    <h3>Your age on Venus<br>is...</h3>
+                                    <input type="number" name="finalage" id="venusfinalage">
+                                    <sl-icon name="arrow-counterclockwise" id="venusagerefreshbutton"></sl-icon>
+                                </div>
+                            </div>
+
+                        </div>
+                
+                    </sl-tab-panel>
+
+            </sl-tab-group>
+        
+        </section>
+    </div>
+
+    <!--EARTH-->
+    <div class="section">
+        <section id="earthsection">
+            <div id="earthdiv">
+                <img src="images/earth.png" id="earthimage" alt="The planet Earth up close">
+            </div>
+
+            <div id="earthtext">
+                <h2>Earth</h2>
+                <h3>Earth is the only habitable planet for humans and is 71% water.</h3>
+                <button id="earthbutton">More</button>
+            </div>
+        </section>
+
+        <!--EARTH PROFILE-->
+        <section id="earthprofile">
+
+            <sl-tab-group>
+                <sl-tab slot="nav" panel="general">General Info</sl-tab>
+                <sl-tab slot="nav" panel="custom">More Info</sl-tab>
+
+                    <!--GENERAL INFO TAB-->
+                    <sl-tab-panel name="general">
+
+                        <div class="generaltab">
+
+                            <!--BACK BUTTON-->
+                            <div class="backbuttonbox"> 
+                                <button id="earthbackbutton">Back</button>
+                            </div>
+
+                            <!--KEY FACTS-->
+                            <div class="keyfacts">
+                                <h3>Key Facts</h3>
+
+                                <h4>Type of planet:</h4>
+                                <p>Terrestrial</p>
+                                <p>_______________</p>
+
+                                <h4>Number of moons:</h4>
+                                <p>1</p>
+                                <p>_______________</p>
+
+                                <h4>Year length:</h4>
+                                <p>365 days</p>
+                                <p>_______________</p>
+
+                                <h4>Day length:</h4>
+                                <p>24 hours</p>
+                                <p>_______________</p>
+
+                                <h4>Average Surface Temp:</h4>
+                                <p>15 degrees celsius</p>
+                                <p>_______________</p>
+
+                                <h4>Distance from sun:</h4>
+                                <p>150 million km</p>
+                                <p>_______________</p>
+
+                                <h4>Gravity</h4>
+                                <p>9.8m/s</p>
+                                <p>_______________</p>
+                            </div>
+
+                            <!--IMAGE-->
+                            <div class="profileimage">
+                                <img src="images/earth.png" id="earthprofileimage" alt="Smaller image of the planet Earth up close">
+                            </div>
+
+                            <!--TITLE-->
+                            <div class="profiletitle">
+                                <h2>Earth</h2>
+                            </div>
+
+                            <!--BALL BOUNCING-->
+                            <div id="earthballsection">
+                                <div id="earthball">
+        
+                                    <div id="earthbounceball"></div>
+        
+                                    <sl-tooltip content="Toggle this to bounce a ball">
+                                        <sl-switch id="earthballswitch">Enable Bounce</sl-switch>
+                                    </sl-tooltip>
+        
+                                    <p>See what a ball bouncing on Earth would look like</p>
+        
+                                </div>
+
+                            
+                            </div>
+
+                    </div>
+            
+                </sl-tab-panel>
+
+
+                <!--CUSTOM TAB/MORE INFO-->
+
+                <sl-tab-panel name="custom" class="customtab">
+                    <div class="thecustomtab">
+
+                        <div class="paragraphtext">
+                            <p>Earth, our home planet, is the only place in the solar system that can sustain human life. This is due to our rich atmosphere, which
+                            regulates the Earth's temperature, allows water to exist as a liquid and protects us from meteorites and radiation. 
+                            </p>
+                        </div>
+
+                        <div class="calculators">
+
+                            <!--CALCULATE WEIGHT-->
+                            <div id="earthcalculateweight">
+                                <h3>Calculate Your Weight <br>on Earth</h3>
+                                <input type="number" name="weight" id="earthweight" placeholder="Enter your weight in kg">
+                                <button id="earthweightbutton">Calculate</button>
+                            </div>
+
+                            <div id="earthweightanswer">
+                                <h3>Your weight on Earth<br>is...</h3>
+                                <input type="number" name="finalweight" id="earthfinalweight">
+                                <sl-icon name="arrow-counterclockwise" id="earthweightrefreshbutton"></sl-icon>
+                            </div>
+
+                            <!--CALCULATE AGE-->
+                            <div id="earthcalculateage">
+                                <h3>Calculate Your Age <br>on Earth</h3>
+                                <input type="number" name="age" id="earthage" placeholder="Enter your age in years">
+                                <button id="earthagebutton">Calculate</button>
+                            </div>
+
+                            <div id="earthageanswer">
+                                <h3>Your age on Earth<br>is...</h3>
+                                <input type="number" name="finalage" id="earthfinalage">
+                                <sl-icon name="arrow-counterclockwise" id="earthagerefreshbutton"></sl-icon>
+                            </div>
+                        </div>
+
+                        </div>
+            
+                </sl-tab-panel>
+
+            </sl-tab-group>
+
+        </section>
+    </div>
+
+    <!--MARS-->
+    <div class="section">
+        <section id="marssection">
+            <div id="marstext">
+                <h2>Mars</h2>
+                <h3>Mars is the fourth planet from the sun. The planet has it's red colour because it is covered in rust.</h3>
+                <button id="marsbutton">More</button>
+            </div>
+
+            <div id="marsdiv">
+                <img src="images/mars.png" id="marsimage" alt="The planet Mars up close">
+            </div>
+        </section>
+
+        <!--MARS PROFILE-->
+        <section id="marsprofile">
+
+            <sl-tab-group>
+                <sl-tab slot="nav" panel="general">General Info</sl-tab>
+                <sl-tab slot="nav" panel="custom">More Info</sl-tab>
+
+                <!--GENERAL INFO TAB-->
+                <sl-tab-panel name="general">
+
+                    <div class="generaltab">
+
+                        <!--BACK BUTTON-->
+                        <div class="backbuttonbox"> 
+                            <button id="marsbackbutton">Back</button>
+                        </div>
+
+                        <!--KEY FACTS-->
+                        <div class="keyfacts">
+                            <h3>Key Facts</h3>
+
+                            <h4>Type of planet:</h4>
+                            <p>Terrestrial</p>
+                            <p>_______________</p>
+
+                            <h4>Number of moons:</h4>
+                            <p>2</p>
+                            <p>_______________</p>
+
+                            <h4>Year length:</h4>
+                            <p>687 Earth days</p>
+                            <p>_______________</p>
+
+                            <h4>Day length:</h4>
+                            <p>24hrs 37mins</p>
+                            <p>_______________</p>
+
+                            <h4>Average Surface Temp:</h4>
+                            <p>-63 degrees celsius</p>
+                            <p>_______________</p>
+
+                            <h4>Distance from sun:</h4>
+                            <p>213 million km</p>
+                            <p>_______________</p>
+
+                            <h4>Gravity</h4>
+                            <p>3.71m/s</p>
+                            <p>_______________</p>
+                        </div>
+
+                        <!--IMAGE-->
+                        <div class="profileimage">
+                            <img src="images/mars.png" id="marsprofileimage" alt= "Smaller image of the planet Mars up close">
+                        </div>
+
+                        <!--TITLE-->
+                        <div class="profiletitle">
+                            <h2>Mars</h2>
+                        </div>
+
+                         <!--BALL BOUNCING-->
+                         <div id="marsballsection">
+                            <div id="marsball">
+    
+                                <div id="marsbounceball"></div>
+    
+                                <sl-tooltip content="Toggle this to bounce a ball">
+                                    <sl-switch id="marsballswitch">Enable Bounce</sl-switch>
+                                </sl-tooltip>
+    
+                                <p>See what a ball bouncing on Mars would look like</p>
+    
+                            </div>
+
+                        
+                        </div>
+
+                    </div>
+        
+                </sl-tab-panel>
+
+    <!--CUSTOM TAB/MORE INFO-->
+
+    <sl-tab-panel name="custom" class="customtab">
+        <div class="thecustomtab">
+
+            <div class="paragraphtext">
+                <p>Mars is the fourth planet in our solar system, and the most similar to Earth. It is terrestrial, meaning that it would be possible to 
+                    for humans to live on the surface with extensive life support. NASA's Artemis program is the beginning of plans to send humans to Mars
+                    within the next few decades. Multiple rovers have explored Mars and sent back images.
+                </p>
+            </div>
+
+            <div class="calculators">
+
+                <!--CALCULATE WEIGHT-->
+                <div id="marscalculateweight">
+                    <h3>Calculate Your Weight <br>on Mars</h3>
+                    <input type="number" name="weight" id="marsweight" placeholder="Enter your weight in kg">
+                    <button id="marsweightbutton">Calculate</button>
+                </div>
+
+                <div id="marsweightanswer">
+                    <h3>Your weight on Mars<br>is...</h3>
+                    <input type="number" name="finalweight" id="marsfinalweight">
+                    <sl-icon name="arrow-counterclockwise" id="marsweightrefreshbutton"></sl-icon>
+                </div>
+
+                <!--CALCULATE AGE-->
+                <div id="marscalculateage">
+                    <h3>Calculate Your Age <br>on Mars</h3>
+                    <input type="number" name="age" id="marsage" placeholder="Enter your age in years">
+                    <button id="marsagebutton">Calculate</button>
+                </div>
+
+                <div id="marsageanswer">
+                    <h3>Your age on Mars<br>is...</h3>
+                    <input type="number" name="finalage" id="marsfinalage">
+                    <sl-icon name="arrow-counterclockwise" id="marsagerefreshbutton"></sl-icon>
+                </div>
+            </div>
+
+        </div>
+        
+    </sl-tab-panel>
+
+</sl-tab-group>
+
+</section>
+</div>
+
+    <!--JUPITER-->
+    <div class="section">
+        <section id="jupitersection">
+            <div id="jupiterdiv">
+                <img src="images/jupiter.png" id="jupiterimage" alt="The planet Jupiter up close">
+            </div>
+
+            <div id="jupitertext">
+                <h2>Jupiter</h2>
+                <h3>Jupiter is the largest planet and first gas giant in the solar system. It has 79 moons.</h3>
+                <button id="jupiterbutton">More</button>
+            </div>
+        </section>
+
+        <!--JUPITER PROFILE-->
+        <section id="jupiterprofile">
+
+            <sl-tab-group>
+                <sl-tab slot="nav" panel="general">General Info</sl-tab>
+                <sl-tab slot="nav" panel="custom">More Info</sl-tab>
+
+                <!--GENERAL INFO TAB-->
+                <sl-tab-panel name="general">
+
+                    <div class="generaltab">
+
+                        <!--BACK BUTTON-->
+                        <div class="backbuttonbox"> 
+                            <button id="jupiterbackbutton">Back</button>
+                        </div>
+
+                        <!--KEY FACTS-->
+                        <div class="keyfacts">
+                            <h3>Key Facts</h3>
+
+                            <h4>Type of planet:</h4>
+                            <p>Gas giant</p>
+                            <p>_______________</p>
+
+                            <h4>Number of moons:</h4>
+                            <p>79</p>
+                            <p>_______________</p>
+
+                            <h4>Year length:</h4>
+                            <p>11.86 Earth years</p>
+                            <p>_______________</p>
+
+                            <h4>Day length:</h4>
+                            <p>9hrs 56 mins</p>
+                            <p>_______________</p>
+
+                            <h4>Average Surface Temp:</h4>
+                            <p>-110 degrees celsius</p>
+                            <p>_______________</p>
+
+                            <h4>Distance from sun:</h4>
+                            <p>741 million km</p>
+                            <p>_______________</p>
+
+                            <h4>Gravity</h4>
+                            <p>24.79m/s</p>
+                            <p>_______________</p>
+                        </div>
+
+                        <!--IMAGE-->
+                        <div class="profileimage">
+                            <img src="images/jupiter.png" id="jupiterprofileimage" alt="Smaller image of the planet Jupiter up close">
+                        </div>
+
+                        <!--TITLE-->
+                        <div class="profiletitle">
+                            <h2>Jupiter</h2>
+                        </div>
+
+                         <!--BALL BOUNCING-->
+                         <div id="jupiterballsection">
+                            <div id="jupiterball">
+    
+                                <div id="jupiterbounceball"></div>
+    
+                                <sl-tooltip content="Toggle this to bounce a ball">
+                                    <sl-switch id="jupiterballswitch">Enable Bounce</sl-switch>
+                                </sl-tooltip>
+    
+                                <p>See what a ball bouncing on Jupiter would look like</p>
+    
+                            </div>
+
+                        
+                        </div>
+
+                    </div>
+            
+                </sl-tab-panel>
+
+                <!--CUSTOM TAB/MORE INFO-->
+
+                <sl-tab-panel name="custom" class="customtab">
+                    <div class="thecustomtab">
+
+                    <div class="paragraphtext">
+                        <p>Jupiter is the fifth planet from the sun in our Solar System. It is a gas giant, meaning it has no solid surface.<br> Jupiter is enormous - 
+                        11 times the size of Earth! It also has an incredible 79 moons and is the largest planet in our Solar System. </p>
+                    </div>
+
+                    <div class="calculators">
+
+                        <!--CALCULATE WEIGHT-->
+                        <div id="jupitercalculateweight">
+                            <h3>Calculate Your Weight <br>on Jupiter</h3>
+                            <input type="number" name="weight" id="jupiterweight" placeholder="Enter your weight in kg">
+                            <button id="jupiterweightbutton">Calculate</button>
+                        </div>
+
+                        <div id="jupiterweightanswer">
+                            <h3>Your weight on Jupiter<br>is...</h3>
+                            <input type="number" name="finalweight" id="jupiterfinalweight">
+                            <sl-icon name="arrow-counterclockwise" id="jupiterweightrefreshbutton"></sl-icon>
+                        </div>
+
+                        <!--CALCULATE AGE-->
+                        <div id="jupitercalculateage">
+                            <h3>Calculate Your Age <br>on Jupiter</h3>
+                            <input type="number" name="age" id="jupiterage" placeholder="Enter your age in years">
+                            <button id="jupiteragebutton">Calculate</button>
+                        </div>
+
+                        <div id="jupiterageanswer">
+                            <h3>Your age on Jupiter<br>is...</h3>
+                            <input type="number" name="finalage" id="jupiterfinalage">
+                            <sl-icon name="arrow-counterclockwise" id="jupiteragerefreshbutton"></sl-icon>
+                        </div>
+                    </div>
+                    </div>
+            
+                </sl-tab-panel>
+
+            </sl-tab-group>
+
+  </section>
+  </div>
+
+    <!--SATURN-->
+    <div class="section">
+        <section id="saturnsection">
+            <div id="saturntext">
+                <h2>Saturn</h2>
+                <h3>Saturn has so many moons that it can be considered a mini solar system. It also has 7 rings.</h3>
+                <button id="saturnbutton">More</button>
+            </div>
+
+            <div id="saturndiv">
+                <img src="images/saturn.png" id="saturnimage" alt="The planet Saturn up close">
+            </div>
+        </section>
+
+        <!--SATURN PROFILE-->
+        <section id="saturnprofile">
+
+            <sl-tab-group>
+                <sl-tab slot="nav" panel="general">General Info</sl-tab>
+                <sl-tab slot="nav" panel="custom">More Info</sl-tab>
+
+                    <!--GENERAL INFO TAB-->
+                    <sl-tab-panel name="general">
+
+                        <div class="generaltab">
+
+                            <!--BACK BUTTON-->
+                            <div class="backbuttonbox"> 
+                                <button id="saturnbackbutton">Back</button>
+                            </div>
+                
+                
+                            <!--KEY FACTS-->
+                            <div class="keyfacts">
+                                <h3>Key Facts</h3>
+                
+                                <h4>Type of planet:</h4>
+                                <p>Gas giant</p>
+                                <p>_______________</p>
+                
+                                <h4>Number of moons:</h4>
+                                <p>62</p>
+                                <p>_______________</p>
+                
+                                <h4>Year length:</h4>
+                                <p>29.45 Earth years</p>
+                                <p>_______________</p>
+                
+                                <h4>Day length:</h4>
+                                <p>10hrs 34mins</p>
+                                <p>_______________</p>
+                
+                                <h4>Average Surface Temp:</h4>
+                                <p>-176 degrees celsius</p>
+                                <p>_______________</p>
+                
+                                <h4>Distance from sun:</h4>
+                                <p>1.4 billion km</p>
+                                <p>_______________</p>
+                
+                                <h4>Gravity</h4>
+                                <p>10.4m/s</p>
+                                <p>_______________</p>
+                            </div>
+                
+                            <!--IMAGE-->
+                            <div class="profileimage">
+                                <img src="images/saturn.png" id="saturnprofileimage" alt="Smaller image of the planet Saturn up close">
+                            </div>
+                
+                            <!--TITLE-->
+                            <div class="profiletitle">
+                                <h2>Saturn</h2>
+                            </div>
+
+                             <!--BALL BOUNCING-->
+                             <div id="saturnballsection">
+                                <div id="saturnball">
+        
+                                    <div id="saturnbounceball"></div>
+        
+                                    <sl-tooltip content="Toggle this to bounce a ball">
+                                        <sl-switch id="saturnballswitch">Enable Bounce</sl-switch>
+                                    </sl-tooltip>
+        
+                                    <p>See what a ball bouncing on Saturn would look like</p>
+        
+                                </div>
+
+                            
+                            </div>
+        
+                        </div>
+            
+                    </sl-tab-panel>
+
+                    <!--CUSTOM TAB/MORE INFO-->
+
+                    <sl-tab-panel name="custom" class="customtab">
+                        <div class="thecustomtab">
+        
+                        <div class="paragraphtext">
+                            <p>Saturn is the sixth planet from the sun in our Solar System. Like Jupiter, it is a gas giant, but also has an iconic set of 7 rings.<br> 
+                                With it's 7 rings and 62 moons it can almost be considered as a miniature solar system!</p>
+                        </div>
+
+                        <div class="calculators">
+        
+                        <!--CALCULATE WEIGHT-->
+                        <div id="saturncalculateweight">
+                            <h3>Calculate Your Weight <br>on Saturn</h3>
+                            <input type="number" name="weight" id="saturnweight" placeholder="Enter your weight in kg">
+                            <button id="saturnweightbutton">Calculate</button>
+                        </div>
+            
+                        <div id="saturnweightanswer">
+                            <h3>Your weight on Saturn<br>is...</h3>
+                            <input type="number" name="finalweight" id="saturnfinalweight">
+                            <sl-icon name="arrow-counterclockwise" id="saturnweightrefreshbutton"></sl-icon>
+                        </div>
+            
+                        <!--CALCULATE AGE-->
+                        <div id="saturncalculateage">
+                            <h3>Calculate Your Age <br>on Saturn</h3>
+                            <input type="number" name="age" id="saturnage" placeholder="Enter your age in years">
+                            <button id="saturnagebutton">Calculate</button>
+                        </div>
+            
+                        <div id="saturnageanswer">
+                            <h3>Your age on Saturn<br>is...</h3>
+                            <input type="number" name="finalage" id="saturnfinalage">
+                            <sl-icon name="arrow-counterclockwise" id="saturnagerefreshbutton"></sl-icon>
+                        </div>
+                    </div>
+        
+                </div>
+                
+            </sl-tab-panel>
+
+        </sl-tab-group>
+
+      </section>
+      </div>
+
+    <!--URANUS-->
+    <div class="section">
+        <section id="uranussection">
+            <div id="uranusdiv">
+                <img src="images/uranus.png" id="uranusimage" alt="The planet Uranus up close">
+            </div>
+
+            <div id="uranustext">
+                <h2>Uranus</h2>
+                <h3>Uranus is an ice giant and has 13 rings. It is also unusual because it rotates on it's side.</h3>
+                <button id="uranusbutton">More</button>
+            </div>
+        </section>
+
+        <!--URANUS PROFILE-->
+        <section id="uranusprofile">
+
+            <sl-tab-group>
+                <sl-tab slot="nav" panel="general">General Info</sl-tab>
+                <sl-tab slot="nav" panel="custom">More Info</sl-tab>
+
+                    <!--GENERAL INFO TAB-->
+                    <sl-tab-panel name="general">
+
+                        <div class="generaltab">
+
+                            <!--BACK BUTTON-->
+                            <div class="backbuttonbox"> 
+                                <button id="uranusbackbutton">Back</button>
+                            </div>
+
+                            <!--KEY FACTS-->
+                            <div class="keyfacts">
+                                <h3>Key Facts</h3>
+
+                                <h4>Type of planet:</h4>
+                                <p>Ice giant</p>
+                                <p>_______________</p>
+
+                                <h4>Number of moons:</h4>
+                                <p>27</p>
+                                <p>_______________</p>
+
+                                <h4>Year length:</h4>
+                                <p>84 Earth years</p>
+                                <p>_______________</p>
+
+                                <h4>Day length:</h4>
+                                <p>17hrs 14mins</p>
+                                <p>_______________</p>
+
+                                <h4>Average Surface Temp:</h4>
+                                <p>-213 degrees celsius</p>
+                                <p>_______________</p>
+
+                                <h4>Distance from sun:</h4>
+                                <p>2.8 billion km</p>
+                                <p>_______________</p>
+
+                                <h4>Gravity</h4>
+                                <p>8.8m/s</p>
+                                <p>_______________</p>
+                            </div>
+
+                            <!--IMAGE-->
+                            <div class="profileimage">
+                                <img src="images/uranus.png" id="uranusprofileimage" alt= "Smaller image of the planet Uranus up close">
+                            </div>
+
+                            <!--TITLE-->
+                            <div class="profiletitle">
+                                <h2>Uranus</h2>
+                            </div>
+
+                             <!--BALL BOUNCING-->
+                             <div id="uranusballsection">
+                                <div id="uranusball">
+        
+                                    <div id="uranusbounceball"></div>
+        
+                                    <sl-tooltip content="Toggle this to bounce a ball">
+                                        <sl-switch id="uranusballswitch">Enable Bounce</sl-switch>
+                                    </sl-tooltip>
+        
+                                    <p>See what a ball bouncing on Uranus would look like</p>
+        
+                                </div>
+
+                            
+                            </div>
+
+                        </div>
+            
+                    </sl-tab-panel>
+
+                    <!--CUSTOM TAB/MORE INFO-->
+
+                    <sl-tab-panel name="custom" class="customtab">
+                        <div class="thecustomtab">
+
+
+                            <div class="paragraphtext">
+                                <p>Uranus is the seventh planet in our solar system. It is an enormous ice giant (four times wider than Earth!), although it is mostly comprised 
+                                    of gas. Uranus is quite unusual because it rotates on it's side. It also surprisingly has more rings than Saturn (13 as opposed to 7), but
+                                    they are very faint and therefore hard to see.</p>
+                            </div>
+
+                            <div class="calculators">
+
+                                <!--CALCULATE WEIGHT-->
+                                <div id="uranuscalculateweight">
+                                    <h3>Calculate Your Weight <br>on Uranus</h3>
+                                    <input type="number" name="weight" id="uranusweight" placeholder="Enter your weight in kg">
+                                    <button id="uranusweightbutton">Calculate</button>
+                                </div>
+
+                                <div id="uranusweightanswer">
+                                    <h3>Your weight on Uranus<br>is...</h3>
+                                    <input type="number" name="finalweight" id="uranusfinalweight">
+                                    <sl-icon name="arrow-counterclockwise" id="uranusweightrefreshbutton"></sl-icon>
+                                </div>
+
+                                <!--CALCULATE AGE-->
+                                <div id="uranuscalculateage">
+                                    <h3>Calculate Your Age <br>on Uranus</h3>
+                                    <input type="number" name="age" id="uranusage" placeholder="Enter your age in years">
+                                    <button id="uranusagebutton">Calculate</button>
+                                </div>
+
+                                <div id="uranusageanswer">
+                                    <h3>Your age on Uranus<br>is...</h3>
+                                    <input type="number" name="finalage" id="uranusfinalage">
+                                    <sl-icon name="arrow-counterclockwise" id="uranusagerefreshbutton"></sl-icon>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </sl-tab-panel>
+
+            </sl-tab-group>
+              
+        </section>
+    </div>
+
+    <!--NEPTUNE-->
+    <div class="section">
+        <section id="neptunesection">
+            <div id="neptunetext">
+                <h2>Neptune</h2>
+                <h3>Neptune is the last planet in the solar system, and only one unmanned spacecraft has ever visited it - the Voyager 2.</h3>
+                <button id="neptunebutton">More</button>
+            </div>
+
+            <div id="neptunediv">
+                <img src="images/neptune.png" id="neptuneimage" alt="The planet Neptune up close">
+            </div>
+        </section>
+
+        <!--NEPTUNE PROFILE-->
+        <section id="neptuneprofile">
+
+            <sl-tab-group>
+                <sl-tab slot="nav" panel="general">General Info</sl-tab>
+                <sl-tab slot="nav" panel="custom">More Info</sl-tab>
+
+                    <!--GENERAL INFO TAB-->
+                    <sl-tab-panel name="general">
+
+                        <div class="generaltab">
+
+                            <!--BACK BUTTON-->
+                            <div class="backbuttonbox"> 
+                                <button id="neptunebackbutton">Back</button>
+                            </div>
+
+                            <!--KEY FACTS-->
+                            <div class="keyfacts">
+                                <h3>Key Facts</h3>
+
+                                <h4>Type of planet:</h4>
+                                <p>Gas giant</p>
+                                <p>_______________</p>
+
+                                <h4>Number of moons:</h4>
+                                <p>14</p>
+                                <p>_______________</p>
+
+                                <h4>Year length:</h4>
+                                <p>164.81 Earth years</p>
+                                <p>_______________</p>
+
+                                <h4>Day length:</h4>
+                                <p>16hrs</p>
+                                <p>_______________</p>
+
+                                <h4>Average Surface Temp:</h4>
+                                <p>-225 degrees celsius</p>
+                                <p>_______________</p>
+
+                                <h4>Distance from sun:</h4>
+                                <p>4.4 billion km</p>
+                                <p>_______________</p>
+
+                                <h4>Gravity</h4>
+                                <p>11.15m/s</p>
+                                <p>_______________</p>
+                            </div>
+
+                            <!--IMAGE-->
+                            <div class="profileimage">
+                                <img src="images/neptune.png" id="neptuneprofileimage" alt="Smaller image of the planet Neptune up close">
+                            </div>
+
+                            <!--TITLE-->
+                            <div class="profiletitle">
+                                <h2>Neptune</h2>
+                            </div>
+
+                             <!--BALL BOUNCING-->
+                             <div id="neptuneballsection">
+                                <div id="neptuneball">
+        
+                                    <div id="neptunebounceball"></div>
+        
+                                    <sl-tooltip content="Toggle this to bounce a ball">
+                                        <sl-switch id="neptuneballswitch">Enable Bounce</sl-switch>
+                                    </sl-tooltip>
+        
+                                    <p>See what a ball bouncing on Neptune would look like</p>
+        
+                                </div>
+
+                            
+                            </div>
+
+                        </div>
+            
+                    </sl-tab-panel>
+
+                    <!--CUSTOM TAB/MORE INFO-->
+
+                    <sl-tab-panel name="custom" class="customtab">
+                        <div class="thecustomtab">
+
+                            <div class="paragraphtext">
+                                <p>Neptune is the final planet in our solar system (since Pluto was discounted in 2006). It is a staggering 4.4 billion km from the sun
+                                    meaning that the surface's average temperature is a chilly -225 degrees celsius. 
+                                </p>
+                            </div>
+
+                            <div class="calculators">
+
+                                <!--CALCULATE WEIGHT-->
+                                <div id="neptunecalculateweight">
+                                    <h3>Calculate Your Weight <br>on Neptune</h3>
+                                    <input type="number" name="weight" id="neptuneweight" placeholder="Enter your weight in kg">
+                                    <button id="neptuneweightbutton">Calculate</button>
+                                </div>
+
+                                <div id="neptuneweightanswer">
+                                    <h3>Your weight on Neptune<br>is...</h3>
+                                    <input type="number" name="finalweight" id="neptunefinalweight">
+                                    <sl-icon name="arrow-counterclockwise" id="neptuneweightrefreshbutton"></sl-icon>
+                                </div>
+
+                                <!--CALCULATE AGE-->
+                                <div id="neptunecalculateage">
+                                    <h3>Calculate Your Age <br>on Neptune</h3>
+                                    <input type="number" name="age" id="neptuneage" placeholder="Enter your age in years">
+                                    <button id="neptuneagebutton">Calculate</button>
+                                </div>
+
+                                <div id="neptuneageanswer">
+                                    <h3>Your age on Neptune<br>is...</h3>
+                                    <input type="number" name="finalage" id="neptunefinalage">
+                                    <sl-icon name="arrow-counterclockwise" id="neptuneagerefreshbutton"></sl-icon>
+                                </div>
+                            </div>
+                        </div>        
+            
+                    </sl-tab-panel>
+
+            </sl-tab-group>
+              
+        </section>
+    </div>
+
+    <!--IMAGE GALLERY-->
+    <div class="section">
+        <h2 id="imagegallerytitle">Image Gallery</h2>
+        <div class="gallery"> <!--This is the formatting for the FS Lightbox gallery layout that I used-->
+        
+                <a data-fslightbox="gallery" href="https://source.unsplash.com/1000x600?solarsystem">
+                    <img src="https://source.unsplash.com/1000x600?solarsystem" alt="A randomly generated image of the Solar System">
+                </a>
+
+                <a data-fslightbox="gallery" href="https://source.unsplash.com/?sun">
+                    <img src="https://source.unsplash.com/1000x600?sun" alt="A randomly generated image of the Sun">
+                </a>
+
+                <a data-fslightbox="gallery" href="https://source.unsplash.com/1000x600?planet">
+                    <img src="https://source.unsplash.com/1000x600?planet" alt="A randomly generated image of a planet">
+                </a>
+
+                <a data-fslightbox="gallery" href="https://source.unsplash.com/1000x600?galaxy">
+                    <img src="https://source.unsplash.com/1000x600?galaxy" alt="A randomly generated image of the galaxy">
+                </a>
+
+                <a data-fslightbox="gallery" href="https://source.unsplash.com/1000x600?moon">
+                    <img src="https://source.unsplash.com/1000x600?moon" alt="A randomly generated image of the moon">
+                </a>
+        </div>
+    </div>
+
+    <div class="section">
+
+        <h2 id="endtitle">Thankyou for visiting the Australian Geographic Solar System website!</h2>
+
+        <div id="svgplanets"> <!--This is the formatting for the SVG Animation that I used-->
+
+            <!--MERCURY-->
+            <svg width="223" height="223" viewBox="0 0 223 223" fill="none" xmlns="http://www.w3.org/2000/svg" id="mercurycircle">
+                <path class="circle" d="M223 111.5C223 173.08 173.08 223 111.5 223C49.9202 223 0 173.08 0 111.5C0 49.9202 49.9202 0 111.5 0C173.08 0 223 49.9202 223 111.5Z" 
+                fill="#545454"/>
+            </svg>
+
+            <!--VENUS-->
+            <svg width="223" height="223" viewBox="0 0 223 223" fill="none" xmlns="http://www.w3.org/2000/svg" id="venuscircle">
+                <path class="circle" d="M223 111.5C223 173.08 173.08 223 111.5 223C49.9202 223 0 173.08 0 111.5C0 49.9202 49.9202 0 111.5 0C173.08 0 223 49.9202 223 111.5Z" 
+                fill="#e4a046"/>
+            </svg>
+
+            <!--EARTH-->
+            <svg width="223" height="223" viewBox="0 0 223 223" fill="none" xmlns="http://www.w3.org/2000/svg" id="earthcircle">
+                <path class="circle" d="M223 111.5C223 173.08 173.08 223 111.5 223C49.9202 223 0 173.08 0 111.5C0 49.9202 49.9202 0 111.5 0C173.08 0 223 49.9202 223 111.5Z" 
+                fill="#3a4b74"/>
+            </svg>
+
+            <!--MARS-->
+            <svg width="223" height="223" viewBox="0 0 223 223" fill="none" xmlns="http://www.w3.org/2000/svg" id="marscircle">
+                <path class="circle" d="M223 111.5C223 173.08 173.08 223 111.5 223C49.9202 223 0 173.08 0 111.5C0 49.9202 49.9202 0 111.5 0C173.08 0 223 49.9202 223 111.5Z" 
+                fill="#ad5429"/>
+            </svg>
+
+            <!--JUPITER-->
+            <svg width="223" height="223" viewBox="0 0 223 223" fill="none" xmlns="http://www.w3.org/2000/svg" id="jupitercircle">
+                <path class="circle" d="M223 111.5C223 173.08 173.08 223 111.5 223C49.9202 223 0 173.08 0 111.5C0 49.9202 49.9202 0 111.5 0C173.08 0 223 49.9202 223 111.5Z" 
+                fill="#bd804e"/>
+            </svg>
+
+            <!--SATURN-->
+            <svg width="223" height="223" viewBox="0 0 223 223" fill="none" xmlns="http://www.w3.org/2000/svg" id="saturncircle">
+                <path class="circle" d="M223 111.5C223 173.08 173.08 223 111.5 223C49.9202 223 0 173.08 0 111.5C0 49.9202 49.9202 0 111.5 0C173.08 0 223 49.9202 223 111.5Z" 
+                fill="#c7ab5b"/>
+            </svg>
+
+            <!--URANUS-->
+            <svg width="223" height="223" viewBox="0 0 223 223" fill="none" xmlns="http://www.w3.org/2000/svg" id="uranuscircle">
+                <path class="circle" d="M223 111.5C223 173.08 173.08 223 111.5 223C49.9202 223 0 173.08 0 111.5C0 49.9202 49.9202 0 111.5 0C173.08 0 223 49.9202 223 111.5Z" 
+                fill="#bfc8e9"/>
+            </svg>
+
+            <!--NEPTUNE-->
+            <svg width="223" height="223" viewBox="0 0 223 223" fill="none" xmlns="http://www.w3.org/2000/svg" id="neptunecircle">
+                <path class="circle" d="M223 111.5C223 173.08 173.08 223 111.5 223C49.9202 223 0 173.08 0 111.5C0 49.9202 49.9202 0 111.5 0C173.08 0 223 49.9202 223 111.5Z" 
+                fill="#1f60a5"/>
+            </svg>
+
+
+        </div>
+    </div>
+
+    <div class="section">
+        <footer>
+            <div class="footertext">
+                <h3>Terrestrial Planets</h3>
+                <a href="#mercurysection">Mercury</a> <br>
+                <a href="#venussection">Venus</a> <br>
+                <a href="#earthsection">Earth</a> <br>
+                <a href="#marssection">Mars</a>
+            </div>
+        
+            <div class="footertext">
+                <h3>Gas/Ice Giant Planets</h3>
+                <a href="#jupitersection">Jupiter</a> <br>
+                <a href="#saturnsection">Saturn</a> <br>
+                <a href="#uranussection">Uranus</a> <br>
+                <a href="#neptunesection">Neptune</a>
+            </div>
+        
+            <div>
+                <img src="images/australian-geographic-logo.jpg" alt="The Australian Geographic logo">
+            </div>
+        </footer>
+    </div>
+</div>
+
+    <!--ANIME.JS LINK--> <!--This links the online Anime JavaScript file to my project-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" 
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--FS LIGHTBOX LINK--> <!--This links the online FS Lightbox JavaScript file to my project-->
+    <script src="js/fslightbox.js"></script>
+
+    <!--FULLPAGE.JS LINK--> <!--This links the online Fullpage JavaScript file to my project-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js" 
+    integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--JAVASCRIPT FILE LINK--> <!--This links my own JavaScript file-->
+    <script src="js/main.js"></script>
+
+    
+</body>
+
+
+</html>
